@@ -1,0 +1,31 @@
+packages/proComponents/src/components/ButtonPlus/ButtonPlus.tsx
+  s_00b0a89df21fe0::t_692c4b44ff060d 5
+  h_916381dd4ea6f7 7
+packages/proComponents/src/components/index.ts
+  s_00b0a89df21fe0::t_52d6a20fd8c0b7 1
+packages/proComponents/src/index.ts
+  s_00b0a89df21fe0::t_ae76539a06558f 12
+packages/proComponents/src/components/ButtonPlus/index.ts
+  s_00b0a89df21fe0::t_265796cd0c446e 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "10922175b4ec099d0774706021d89e92ff30b9b8",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
