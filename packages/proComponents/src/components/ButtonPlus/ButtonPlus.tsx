@@ -1,13 +1,13 @@
 import { defineComponent, toRefs } from 'vue';
 import { ElButton } from 'element-plus';
-import { bttonPlusProps, type ButtonPlusProps } from './typing';
+import { buttonPlusProps, type ButtonPlusProps } from './types';
 import { withInstall } from '@/utils/install';
-import styles from './index.module.scss';
+import styles from './button-plus.module.scss';
 
 const ButtonPlus = withInstall(
   defineComponent({
     name: 'ButtonPlus',
-    props: bttonPlusProps,
+    props: buttonPlusProps,
     setup(props: ButtonPlusProps, { slots }) {
       const { type, size } = toRefs(props);
       return () => (

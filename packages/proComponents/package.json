@@ -1,5 +1,5 @@
 {
-  "name": "@yobiccc/pro-componens",
+  "name": "@yobiccc/pro-components",
   "version": "0.0.7",
   "description": "Use Element Plus components in your project",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cuzme/xu-harbor.git",
-    "directory": "packages/proComponens"
+    "directory": "packages/proComponents"
   },
   "publishConfig": {
     "access": "public",
@@ -31,8 +31,8 @@
       }
     },
     "./style.css": {
-      "import": "./es/pro-componens.css",
-      "require": "./lib/pro-componens.css"
+      "import": "./es/pro-components.css",
+      "require": "./lib/pro-components.css"
     }
   },
   "files": [

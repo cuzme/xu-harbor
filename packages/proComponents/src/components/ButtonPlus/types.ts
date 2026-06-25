@@ -1,7 +1,7 @@
 import { type ExtractPropTypes, type PropType } from 'vue';
 import type { ButtonType } from 'element-plus';
 
-export const bttonPlusProps = {
+export const buttonPlusProps = {
   type: {
     type: String as PropType<ButtonType>,
     default: 'primary',
@@ -12,4 +12,4 @@ export const bttonPlusProps = {
   },
 };
 
-export type ButtonPlusProps = ExtractPropTypes<typeof bttonPlusProps>;
+export type ButtonPlusProps = ExtractPropTypes<typeof buttonPlusProps>;

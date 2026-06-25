@@ -13,8 +13,8 @@
 [![vue](https://img.shields.io/badge/vue-3.x-42b883?style=flat-square&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 [![element plus](https://img.shields.io/badge/element--plus-2.x-409eff?style=flat-square)](https://element-plus.org/)
 
-[![npm version](https://img.shields.io/npm/v/@yobiccc/pro-componens?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-componens)
-[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-componens?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-componens)
+[![npm version](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
+[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
 
 [快速开始](#快速开始) · [组件文档](#packages) · [本地开发](#本地开发) · [发布](#发布)
 
@@ -27,7 +27,7 @@
 - **Monorepo 架构** — pnpm workspace + Turbo 任务编排 + Lerna 独立版本发布
 - **Vue 3 + TSX** — 基于 Element Plus 二次封装，保留类型提示
 - **双格式产物** — ESM (`.mjs`) + CJS (`.cjs`)，自动生成 `.d.mts` / `.d.cts`
-- **按需引入** — 支持具名导入单个组件，独立样式入口 `@yobiccc/pro-componens/style.css`
+- **按需引入** — 支持具名导入单个组件，独立样式入口 `@yobiccc/pro-components/style.css`
 - **工程化完备** — ESLint、Prettier、Git Hooks 一应俱全
 
 ---
@@ -36,7 +36,7 @@
 
 | 包名 | 版本 | 说明 |
 | --- | --- | --- |
-| [@yobiccc/pro-componens](./packages/proComponens) | [![npm](https://img.shields.io/npm/v/@yobiccc/pro-componens?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-componens) | 基于 Element Plus 的业务组件库 |
+| [@yobiccc/pro-components](./packages/proComponents) | [![npm](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components) | 基于 Element Plus 的业务组件库 |
 
 ---
 
@@ -45,14 +45,14 @@
 ### 安装
 
 ```bash
-pnpm add @yobiccc/pro-componens element-plus vue
+pnpm add @yobiccc/pro-components element-plus vue
 ```
 
 ### 引入样式
 
 ```ts
 // main.ts
-import '@yobiccc/pro-componens/style.css';
+import '@yobiccc/pro-components/style.css';
 import 'element-plus/dist/index.css';
 ```
 
@@ -61,13 +61,13 @@ import 'element-plus/dist/index.css';
 ```ts
 import { createApp } from 'vue';
 import ElementPlus from 'element-plus';
-import ProComponens from '@yobiccc/pro-componens';
+import ProComponents from '@yobiccc/pro-components';
 import App from './App.vue';
 
 const app = createApp(App);
 
 app.use(ElementPlus);
-app.use(ProComponens);
+app.use(ProComponents);
 app.mount('#app');
 ```
 
@@ -75,7 +75,7 @@ app.mount('#app');
 
 ```vue
 <script setup lang="ts">
-import { ButtonPlus } from '@yobiccc/pro-componens';
+import { ButtonPlus } from '@yobiccc/pro-components';
 </script>
 
 <template>
@@ -112,7 +112,7 @@ pnpm install
 pnpm build
 
 # 仅构建组件库
-pnpm --filter @yobiccc/pro-componens build
+pnpm --filter @yobiccc/pro-components build
 
 # 代码检查 & 格式化
 pnpm lint
@@ -130,7 +130,7 @@ pnpm release:prepare
 ```text
 xu-harbor/
 ├── packages/
-│   └── proComponens/          # @yobiccc/pro-componens 组件库
+│   └── proComponents/         # @yobiccc/pro-components 组件库
 │       ├── src/
 │       │   ├── components/    # 业务组件
 │       │   └── utils/         # 工具函数

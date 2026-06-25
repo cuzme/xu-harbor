@@ -1,14 +1,14 @@
 <div align="center">
 
-# @yobiccc/pro-componens
+# @yobiccc/pro-components
 
 基于 [Element Plus](https://element-plus.org/) 封装的 Vue 3 业务组件库，支持 TypeScript、按需引入与独立样式加载。
 
 <br />
 
-[![npm version](https://img.shields.io/npm/v/@yobiccc/pro-componens?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-componens)
-[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-componens?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-componens)
-[![license](https://img.shields.io/npm/l/@yobiccc/pro-componens?style=flat-square)](https://github.com/cuzme/xu-harbor/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
+[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
+[![license](https://img.shields.io/npm/l/@yobiccc/pro-components?style=flat-square)](https://github.com/cuzme/xu-harbor/blob/main/LICENSE)
 [![vue](https://img.shields.io/badge/vue-3.x-42b883?style=flat-square&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 
 [安装](#安装) · [快速上手](#快速上手) · [组件](#组件) · [仓库](https://github.com/cuzme/xu-harbor)
@@ -30,11 +30,11 @@
 ## 安装
 
 ```bash
-pnpm add @yobiccc/pro-componens element-plus vue
+pnpm add @yobiccc/pro-components element-plus vue
 ```
 
 ```bash
-npm install @yobiccc/pro-componens element-plus vue
+npm install @yobiccc/pro-components element-plus vue
 ```
 
 ### Peer Dependencies
@@ -54,7 +54,7 @@ npm install @yobiccc/pro-componens element-plus vue
 
 ```ts
 // main.ts
-import '@yobiccc/pro-componens/style.css';
+import '@yobiccc/pro-components/style.css';
 import 'element-plus/dist/index.css';
 ```
 
@@ -65,13 +65,13 @@ import 'element-plus/dist/index.css';
 ```ts
 import { createApp } from 'vue';
 import ElementPlus from 'element-plus';
-import ProComponens from '@yobiccc/pro-componens';
+import ProComponents from '@yobiccc/pro-components';
 import App from './App.vue';
 
 const app = createApp(App);
 
 app.use(ElementPlus);
-app.use(ProComponens);
+app.use(ProComponents);
 app.mount('#app');
 ```
 
@@ -79,7 +79,7 @@ app.mount('#app');
 
 ```vue
 <script setup lang="ts">
-import { ButtonPlus } from '@yobiccc/pro-componens';
+import { ButtonPlus } from '@yobiccc/pro-components';
 </script>
 
 <template>
@@ -90,7 +90,7 @@ import { ButtonPlus } from '@yobiccc/pro-componens';
 或仅注册单个组件：
 
 ```ts
-import { ButtonPlus } from '@yobiccc/pro-componens';
+import { ButtonPlus } from '@yobiccc/pro-components';
 
 app.use(ButtonPlus);
 ```
@@ -131,16 +131,16 @@ app.use(ButtonPlus);
 
 ```ts
 // 默认导出：带 install 方法的插件对象
-import ProComponens from '@yobiccc/pro-componens';
+import ProComponents from '@yobiccc/pro-components';
 
 // 具名导出
-import { ButtonPlus, install } from '@yobiccc/pro-componens';
+import { ButtonPlus, install } from '@yobiccc/pro-components';
 ```
 
 | 入口                               | 说明             |
 | ---------------------------------- | ---------------- |
-| `@yobiccc/pro-componens`           | 组件与插件主入口 |
-| `@yobiccc/pro-componens/style.css` | 组件库样式文件   |
+| `@yobiccc/pro-components`           | 组件与插件主入口 |
+| `@yobiccc/pro-components/style.css` | 组件库样式文件   |
 
 ---
 
@@ -152,7 +152,7 @@ import { ButtonPlus, install } from '@yobiccc/pro-componens';
 git clone git@github.com:cuzme/xu-harbor.git
 cd xu-harbor
 pnpm install
-pnpm --filter @yobiccc/pro-componens build
+pnpm --filter @yobiccc/pro-components build
 ```
 
 ---
