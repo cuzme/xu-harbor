@@ -1,0 +1,28 @@
+packages/proComponens/src/components/ButtonPlus/ButtonPlus.tsx
+  h_916381dd4ea6f7 11,13
+packages/proComponens/package.json
+  s_66e341415909d2::t_5ce73864e44020 2
+packages/proComponens/src/components/ButtonPlus/typing.ts
+  h_916381dd4ea6f7 9-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "93fe0fc36f0c7c115adf3712e8042e8a62e008bc",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_66e341415909d2": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "67e6cfd2-454a-467e-980b-e475157bc55e",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
