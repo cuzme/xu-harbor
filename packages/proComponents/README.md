@@ -137,8 +137,8 @@ import ProComponents from '@yobiccc/pro-components';
 import { ButtonPlus, install } from '@yobiccc/pro-components';
 ```
 
-| 入口                               | 说明             |
-| ---------------------------------- | ---------------- |
+| 入口                                | 说明             |
+| ----------------------------------- | ---------------- |
 | `@yobiccc/pro-components`           | 组件与插件主入口 |
 | `@yobiccc/pro-components/style.css` | 组件库样式文件   |
 

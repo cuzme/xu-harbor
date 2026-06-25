@@ -2,9 +2,9 @@ import { defineComponent, toRefs } from 'vue';
 import { ElButton } from 'element-plus';
 import { buttonPlusProps, type ButtonPlusProps } from './types';
 import { withInstall } from '@/utils/install';
-import styles from './button-plus.module.scss';
+import styles from './style.module.scss';
 
-const ButtonPlus = withInstall(
+export const ButtonPlus = withInstall(
   defineComponent({
     name: 'ButtonPlus',
     props: buttonPlusProps,
@@ -18,6 +18,3 @@ const ButtonPlus = withInstall(
     },
   }),
 );
-
-export { ButtonPlus };
-export default ButtonPlus;
