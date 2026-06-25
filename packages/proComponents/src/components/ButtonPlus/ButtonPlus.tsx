@@ -4,7 +4,7 @@ import { buttonPlusProps, type ButtonPlusProps } from './types';
 import { withInstall } from '@/utils/install';
 import styles from './style.module.scss';
 
-export const ButtonPlus = withInstall(
+const ButtonPlus = withInstall(
   defineComponent({
     name: 'ButtonPlus',
     props: buttonPlusProps,
@@ -18,3 +18,5 @@ export const ButtonPlus = withInstall(
     },
   }),
 );
+
+export { ButtonPlus };
