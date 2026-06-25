@@ -10,6 +10,7 @@ export const install = function (app: App) {
   return app;
 };
 export { ButtonPlus } from './components';
+export type { ButtonPlusProps } from './components';
 export default {
   install,
 };

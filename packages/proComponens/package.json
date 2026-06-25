@@ -21,9 +21,14 @@
   ],
   "exports": {
     ".": {
-      "types": "./es/index.d.mts",
-      "import": "./es/index.mjs",
-      "require": "./lib/index.cjs"
+      "import": {
+        "types": "./es/index.d.mts",
+        "default": "./es/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      }
     },
     "./style.css": {
       "import": "./es/pro-componens.css",

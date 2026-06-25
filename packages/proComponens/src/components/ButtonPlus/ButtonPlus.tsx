@@ -4,17 +4,20 @@ import { bttonPlusProps, type ButtonPlusProps } from './typing';
 import { withInstall } from '@/utils/install';
 import styles from './index.module.scss';
 
-const ButtonPlus = defineComponent({
-  name: 'ButtonPlus',
-  props: bttonPlusProps,
-  setup(props: ButtonPlusProps, { slots }) {
-    const { type, size } = toRefs(props);
-    return () => (
-      <ElButton type={type.value} size={size.value}>
-        <span class={styles.buttonPlusText}>{slots.default?.()}</span>
-      </ElButton>
-    );
-  },
-});
+const ButtonPlus = withInstall(
+  defineComponent({
+    name: 'ButtonPlus',
+    props: bttonPlusProps,
+    setup(props: ButtonPlusProps, { slots }) {
+      const { type, size } = toRefs(props);
+      return () => (
+        <ElButton type={type.value} size={size.value}>
+          <span class={styles.buttonPlusText}>{slots.default?.()}</span>
+        </ElButton>
+      );
+    },
+  }),
+);
 
-export default withInstall(ButtonPlus);
+export { ButtonPlus };
+export default ButtonPlus;
