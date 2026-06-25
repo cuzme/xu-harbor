@@ -1,12 +1,4 @@
 {
-    "compilerOptions": {
-      "target": "esnext",
-      "module": "esnext",
-      "moduleResolution": "node",
-      "strict": true,
-      "jsx": "preserve",
-      "skipLibCheck": true,
-      "esModuleInterop": true
-    },
-    "exclude": ["node_modules", "dist", "es", "lib", "packages"]
-  }
+  "files": [],
+  "references": [{ "path": "./packages/proComponens" }]
+}
