@@ -1,0 +1,22 @@
+packages/proComponens/vite.config.ts
+  s_17c617cec404d8::t_37ae2d7894571f 13
+packages/proComponens/package.json
+  s_17c617cec404d8::t_5aecf3fda0e0a9 18
+  s_17c617cec404d8::t_588797591a11e2 25,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "7555eff05d6fc615d2380b4ad9554ed75ed01a3b",
+  "prompts": {},
+  "sessions": {
+    "s_17c617cec404d8": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "803f1ada-6c03-4bc2-8c0c-e4781814b585",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
