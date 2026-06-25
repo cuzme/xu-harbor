@@ -6,7 +6,7 @@
     "npmClient": "pnpm",
     "command": {
       "publish": {
-        "registry": ""
+        "registry": "https://registry.npmjs.org/"
       },
       "version": {
         "allowBranch": "main"

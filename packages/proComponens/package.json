@@ -1,9 +1,18 @@
 {
-  "name": "@xu/proComponens",
+  "name": "@yobiccc/proComponens",
   "version": "1.0.0",
   "description": "Use Element Plus components in your project",
   "license": "MIT",
   "author": "xu.zhu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuzme/xu-harbor.git",
+    "directory": "packages/proComponens"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "./lib/index.cjs",
   "module": "./es/index.mjs",
   "types": "./es/index.d.mts",
