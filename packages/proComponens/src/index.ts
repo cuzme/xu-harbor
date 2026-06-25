@@ -9,7 +9,7 @@ export const install = function (app: App) {
   });
   return app;
 };
-export * from './components';
+export { ButtonPlus } from './components';
 export default {
   install,
 };
