@@ -1,0 +1,9 @@
+packages/proComponens/package.json
+  ai_agent 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "81a9d16805c97bda91d1ccabc1c8428f24ebf357",
+  "prompts": {}
+}
