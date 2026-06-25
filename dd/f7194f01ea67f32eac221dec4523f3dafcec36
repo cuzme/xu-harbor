@@ -1,0 +1,19 @@
+tsconfig.json
+  s_66e341415909d2::t_487de5409d06b5 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "ddf7194f01ea67f32eac221dec4523f3dafcec36",
+  "prompts": {},
+  "sessions": {
+    "s_66e341415909d2": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "67e6cfd2-454a-467e-980b-e475157bc55e",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
