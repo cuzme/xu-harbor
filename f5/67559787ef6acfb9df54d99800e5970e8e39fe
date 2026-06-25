@@ -1,0 +1,19 @@
+packages/proComponents/src/components/ButtonPlus/ButtonPlus.tsx
+  s_00b0a89df21fe0::t_a6ba464f46abd1 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "f567559787ef6acfb9df54d99800e5970e8e39fe",
+  "prompts": {},
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
