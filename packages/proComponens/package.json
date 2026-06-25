@@ -26,8 +26,8 @@
       "require": "./lib/index.cjs"
     },
     "./style.css": {
-      "import": "./es/proComponens.css",
-      "require": "./lib/proComponens.css"
+      "import": "./es/pro-componens.css",
+      "require": "./lib/pro-componens.css"
     }
   },
   "files": [
