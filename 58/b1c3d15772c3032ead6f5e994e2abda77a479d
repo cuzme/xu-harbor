@@ -1,0 +1,21 @@
+packages/proComponens/README.md
+  s_66e341415909d2::t_c233cf07596a21 1-162
+README.md
+  s_66e341415909d2::t_b9b263a1528e66 1-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "58b1c3d15772c3032ead6f5e994e2abda77a479d",
+  "prompts": {},
+  "sessions": {
+    "s_66e341415909d2": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "67e6cfd2-454a-467e-980b-e475157bc55e",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
