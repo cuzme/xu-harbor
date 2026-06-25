@@ -10,10 +10,7 @@ export default defineConfig({
     vueJsx(),
     dts({
       entryRoot: 'src',
-      outDirs: [
-        { dir: 'es', moduleFormat: 'esm' },
-        { dir: 'lib', moduleFormat: 'cjs' },
-      ],
+      outDirs: ['es', 'lib'],
       tsconfigPath: path.resolve(__dirname, 'tsconfig.build.json'),
     }),
   ],
