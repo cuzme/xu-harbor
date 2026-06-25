@@ -1,0 +1,20 @@
+packages/proComponents/src/index.ts
+  s_89499c8ce6eed7::t_680228ecbe8b96 4-5,7
+  s_89499c8ce6eed7::t_536c0861ac08e4 6,8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "7a77c16c7eae9eeaf34660e4feee2567d6d969bb",
+  "prompts": {},
+  "sessions": {
+    "s_89499c8ce6eed7": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "5ce2d8b3-cc9c-49c5-acd4-0f3d51fd5852",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
