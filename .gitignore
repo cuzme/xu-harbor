@@ -1,0 +1,39 @@
+# dependencies
+node_modules
+
+# build outputs
+dist
+es
+lib
+types
+
+# turbo
+.turbo
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# environment
+.env
+.env.*
+!.env.example
+
+# test & coverage
+coverage
+
+# caches
+.eslintcache
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editors
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

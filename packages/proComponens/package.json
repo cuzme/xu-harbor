@@ -1,0 +1,63 @@
+{
+  "name": "@xu/proComponens",
+  "version": "1.0.0",
+  "description": "Use Element Plus components in your project",
+  "license": "MIT",
+  "author": "xu.zhu",
+  "main": "./lib/index.cjs",
+  "module": "./es/index.mjs",
+  "types": "./es/index.d.mts",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./es/index.d.mts",
+      "import": "./es/index.mjs",
+      "require": "./lib/index.cjs"
+    },
+    "./style.css": {
+      "import": "./es/proComponens.css",
+      "require": "./lib/proComponens.css"
+    }
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && vite build",
+    "clean": "rimraf ./dist ./es ./lib ./types",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "release": "pnpm run lint:fix && pnpm run format && pnpm run build"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.0.1",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vitejs/plugin-vue-jsx": "^5.1.5",
+    "@vue/language-core": "^3.3.5",
+    "element-plus": "^2.14.2",
+    "eslint": "^10.5.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.9.2",
+    "globals": "^17.7.0",
+    "prettier": "^3.8.4",
+    "rimraf": "^6.1.3",
+    "rollup-plugin-pure": "^0.4.0",
+    "sass-embedded": "^1.100.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2",
+    "vue": "^3.5.38",
+    "vue-eslint-parser": "^10.4.1"
+  }
+}

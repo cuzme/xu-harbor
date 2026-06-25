@@ -1,0 +1,16 @@
+{
+    "packages": [
+      "packages/*"
+    ],
+    "version": "independent",
+    "npmClient": "pnpm",
+    "command": {
+      "publish": {
+        "registry": ""
+      },
+      "version": {
+        "allowBranch": "main"
+      }
+    },
+    "ignoreChanges": ["pnpm-lock.yaml"]
+  }

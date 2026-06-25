@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./types",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "removeComments": true,
+    "noLib": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictFunctionTypes": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": ".",
+    "composite": true
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.vue", "./src/**/*.d.ts"],
+  "exclude": ["node_modules", "es", "lib", "build"]
+}

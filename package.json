@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
+    "build": "turbo run build --log-order=grouped",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check",
+    "release:prepare": "pnpm run lint:fix && pnpm run format && pnpm run build",
+    "dev": "turbo run dev",
+    "publish-canary": "pnpm run release:prepare && lerna publish --canary --preid canary",
+    "publish-beta": "pnpm run release:prepare && lerna publish --canary --preid beta",
+    "publish-stable": "pnpm run release:prepare && lerna publish"
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.4",
+  "devDependencies": {
+    "eslint": "^10.5.0",
+    "husky": "^9.1.7",
+    "lerna": "^9.0.7",
+    "lint-staged": "^17.0.7",
+    "only-allow": "^1.2.2",
+    "prettier": "^3.8.4",
+    "turbo": "^2.9.18"
+  }
+}

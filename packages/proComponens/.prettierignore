@@ -1,0 +1,9 @@
+dist
+es
+lib
+types
+node_modules
+coverage
+*.min.js
+*.min.css
+pnpm-lock.yaml
