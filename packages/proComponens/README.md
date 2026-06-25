@@ -41,9 +41,9 @@ npm install @yobiccc/pro-componens element-plus vue
 
 请确保项目中已安装：
 
-| 包 | 版本 |
-| --- | --- |
-| `vue` | `^3.0.0` |
+| 包             | 版本     |
+| -------------- | -------- |
+| `vue`          | `^3.0.0` |
 | `element-plus` | `^2.0.0` |
 
 ---
@@ -114,15 +114,15 @@ app.use(ButtonPlus);
 
 #### Props
 
-| 属性 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| `type` | `ButtonType` | `'primary'` | 按钮类型，与 Element Plus `ElButton` 的 `type` 一致 |
-| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸 |
+| 属性   | 类型                              | 默认值      | 说明                                                |
+| ------ | --------------------------------- | ----------- | --------------------------------------------------- |
+| `type` | `ButtonType`                      | `'primary'` | 按钮类型，与 Element Plus `ElButton` 的 `type` 一致 |
+| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸                                            |
 
 #### 插槽
 
-| 插槽 | 说明 |
-| --- | --- |
+| 插槽      | 说明     |
+| --------- | -------- |
 | `default` | 按钮内容 |
 
 ---
@@ -137,10 +137,10 @@ import ProComponens from '@yobiccc/pro-componens';
 import { ButtonPlus, install } from '@yobiccc/pro-componens';
 ```
 
-| 入口 | 说明 |
-| --- | --- |
-| `@yobiccc/pro-componens` | 组件与插件主入口 |
-| `@yobiccc/pro-componens/style.css` | 组件库样式文件 |
+| 入口                               | 说明             |
+| ---------------------------------- | ---------------- |
+| `@yobiccc/pro-componens`           | 组件与插件主入口 |
+| `@yobiccc/pro-componens/style.css` | 组件库样式文件   |
 
 ---
 
