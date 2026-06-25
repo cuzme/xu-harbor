@@ -1,0 +1,30 @@
+packages/proComponens/src/index.ts
+  s_00b0a89df21fe0::t_8afe58d31054fe 13
+packages/proComponens/src/components/ButtonPlus/ButtonPlus.tsx
+  s_00b0a89df21fe0::t_1f2c328c92733e 7-20,22-23
+packages/proComponens/package.json
+  s_00b0a89df21fe0::t_e0fb57da5db915 24-31
+packages/proComponens/src/components/index.ts
+  s_00b0a89df21fe0::t_798717beb9b90b 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "507025f2c1fc5fe3a775aaa0a7a706d10b804604",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
