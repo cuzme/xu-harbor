@@ -1,0 +1,19 @@
+packages/proComponens/package.json
+  s_00b0a89df21fe0::t_df40dadedd251f 29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "b3f2206f27cee361a0c7f3376abc522f574a68af",
+  "prompts": {},
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
