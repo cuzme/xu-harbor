@@ -1,0 +1,22 @@
+lerna.json
+  s_66e341415909d2::t_1171caab5cd3e6 9
+packages/proComponens/package.json
+  s_66e341415909d2::t_0762baa0ee661e 2
+  s_66e341415909d2::t_42d41963a51465 7-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "ef32a18bd1cf551cbeab85cd37242d2d6e7ff55e",
+  "prompts": {},
+  "sessions": {
+    "s_66e341415909d2": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "67e6cfd2-454a-467e-980b-e475157bc55e",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
