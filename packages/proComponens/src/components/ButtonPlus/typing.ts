@@ -6,6 +6,10 @@ export const bttonPlusProps = {
     type: String as PropType<ButtonType>,
     default: 'primary',
   },
+  size: {
+    type: String as PropType<'large' | 'default' | 'small'>,
+    default: 'default',
+  },
 };
 
 export type ButtonPlusProps = ExtractPropTypes<typeof bttonPlusProps>;

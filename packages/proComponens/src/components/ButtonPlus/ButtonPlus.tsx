@@ -8,9 +8,9 @@ const ButtonPlus = defineComponent({
   name: 'ButtonPlus',
   props: bttonPlusProps,
   setup(props: ButtonPlusProps, { slots }) {
-    const { type } = toRefs(props);
+    const { type, size } = toRefs(props);
     return () => (
-      <ElButton type={type.value}>
+      <ElButton type={type.value} size={size.value}>
         <span class={styles.buttonPlusText}>{slots.default?.()}</span>
       </ElButton>
     );
