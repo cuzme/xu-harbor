@@ -3,11 +3,23 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["es/**", "lib/**", "dist/**"]
+      "outputs": ["es/**", "lib/**", ".vitepress/dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "preview": {
+      "cache": false,
+      "persistent": true
     },
     "lint": {},
-    "lint:fix": {},
-    "format": {},
+    "lint:fix": {
+      "cache": false
+    },
+    "format": {
+      "cache": false
+    },
     "format:check": {}
   }
 }

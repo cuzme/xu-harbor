@@ -15,6 +15,9 @@
     "format:check": "turbo run format:check",
     "release:prepare": "pnpm run lint:fix && pnpm run format && pnpm run build",
     "dev": "turbo run dev",
+    "docs:dev": "turbo run dev --filter=@xu-harbor/docs",
+    "docs:build": "turbo run build --filter=@xu-harbor/docs",
+    "docs:preview": "turbo run preview --filter=@xu-harbor/docs",
     "publish-canary": "pnpm run release:prepare && lerna publish --canary --preid canary",
     "publish-beta": "pnpm run release:prepare && lerna publish --canary --preid beta",
     "publish-stable": "pnpm run release:prepare && lerna publish"
