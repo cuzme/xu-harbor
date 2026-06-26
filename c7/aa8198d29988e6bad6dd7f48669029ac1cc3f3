@@ -1,0 +1,21 @@
+packages/proComponents/eslint.config.mjs
+  s_f18d0e0108c04e::t_5845313af5ee58 34
+packages/proComponents/src/index.ts
+  s_f18d0e0108c04e::t_7c5412f61d8ba9 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "c7aa8198d29988e6bad6dd7f48669029ac1cc3f3",
+  "prompts": {},
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
