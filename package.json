@@ -1,12 +1,9 @@
 {
   "private": true,
-  "name": "my-monorepo",
+  "name": "xu-harbor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
+    "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build --log-order=grouped",
     "lint": "turbo run lint",
@@ -27,9 +24,6 @@
       "prettier --write"
     ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.33.4",
   "devDependencies": {
     "eslint": "^10.5.0",
