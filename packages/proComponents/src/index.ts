@@ -1,7 +1,7 @@
 import type { App } from 'vue';
 import * as components from './components';
 
-type ProGlobalComponents = typeof import('./components');
+type ProGlobalComponents = typeof components;
 
 declare module 'vue' {
   export interface GlobalComponents extends ProGlobalComponents {}
