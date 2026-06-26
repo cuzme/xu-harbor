@@ -1,0 +1,9 @@
+lerna.json
+  ai_agent 2-7,9-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "40aa67763b8e5281960fa9241535d5ea6d28430c",
+  "prompts": {}
+}
