@@ -2,6 +2,7 @@
   "private": true,
   "name": "xu-harbor",
   "version": "1.0.0",
+  "description": "A Vue 3 monorepo harbor for shared components, utilities, and frontend packages.",
   "scripts": {
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
@@ -20,7 +21,18 @@
     "publish-stable": "pnpm run release:prepare && lerna publish"
   },
   "lint-staged": {
-    "*.md": [
+    "packages/cli/**/*.ts": [
+      "eslint --fix --config packages/cli/eslint.config.mjs",
+      "prettier --write"
+    ],
+    "packages/proComponents/**/*.{ts,tsx,vue}": [
+      "eslint --fix --config packages/proComponents/eslint.config.mjs",
+      "prettier --write"
+    ],
+    "*.{md,json,yml,yaml}": [
+      "prettier --write"
+    ],
+    "packages/**/*.{md,json,mjs,css,scss}": [
       "prettier --write"
     ]
   },

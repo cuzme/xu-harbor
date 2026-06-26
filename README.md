@@ -33,10 +33,10 @@
 
 ## Packages
 
-| 包名 | 版本 | 说明 |
-| --- | --- | --- |
+| 包名                                                | 版本                                                                                                                                    | 说明                           |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | [@yobiccc/pro-components](./packages/proComponents) | [![npm](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components) | 基于 Element Plus 的业务组件库 |
-| [@yobiccc/cli](./packages/cli) | [![npm](https://img.shields.io/npm/v/@yobiccc/cli?style=flat-square)](https://www.npmjs.com/package/@yobiccc/cli) | 快速创建前端项目的命令行脚手架 |
+| [@yobiccc/cli](./packages/cli)                      | [![npm](https://img.shields.io/npm/v/@yobiccc/cli?style=flat-square)](https://www.npmjs.com/package/@yobiccc/cli)                       | 快速创建前端项目的命令行脚手架 |
 
 ---
 
@@ -45,37 +45,37 @@
 ### 安装
 
 ```bash
-pnpm add @yobiccc/pro-components element-plus vue
+pnpm add @yobiccc/pro-components vue element-plus @element-plus/icons-vue @vueuse/core lodash-es
 ```
 
 ### 引入样式
 
 ```ts
 // main.ts
-import '@yobiccc/pro-components/style.css';
-import 'element-plus/dist/index.css';
+import "@yobiccc/pro-components/style.css";
+import "element-plus/dist/index.css";
 ```
 
 ### 全量注册
 
 ```ts
-import { createApp } from 'vue';
-import ElementPlus from 'element-plus';
-import ProComponents from '@yobiccc/pro-components';
-import App from './App.vue';
+import { createApp } from "vue";
+import ElementPlus from "element-plus";
+import ProComponents from "@yobiccc/pro-components";
+import App from "./App.vue";
 
 const app = createApp(App);
 
 app.use(ElementPlus);
 app.use(ProComponents);
-app.mount('#app');
+app.mount("#app");
 ```
 
 ### 按需使用
 
 ```vue
 <script setup lang="ts">
-import { ButtonPlus } from '@yobiccc/pro-components';
+import { ButtonPlus } from "@yobiccc/pro-components";
 </script>
 
 <template>
@@ -85,10 +85,10 @@ import { ButtonPlus } from '@yobiccc/pro-components';
 
 ### ButtonPlus Props
 
-| 属性 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| `type` | `ButtonType` | `'primary'` | 按钮类型，同 Element Plus `ElButton` |
-| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸 |
+| 属性   | 类型                              | 默认值      | 说明                                 |
+| ------ | --------------------------------- | ----------- | ------------------------------------ |
+| `type` | `ButtonType`                      | `'primary'` | 按钮类型，同 Element Plus `ElButton` |
+| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸                             |
 
 ---
 

@@ -29,21 +29,24 @@
 ## 安装
 
 ```bash
-pnpm add @yobiccc/pro-components element-plus vue
+pnpm add @yobiccc/pro-components vue element-plus @element-plus/icons-vue @vueuse/core lodash-es
 ```
 
 ```bash
-npm install @yobiccc/pro-components element-plus vue
+npm install @yobiccc/pro-components vue element-plus @element-plus/icons-vue @vueuse/core lodash-es
 ```
 
 ### Peer Dependencies
 
 请确保项目中已安装：
 
-| 包             | 版本     |
-| -------------- | -------- |
-| `vue`          | `^3.0.0` |
-| `element-plus` | `^2.0.0` |
+| 包                        | 版本       |
+| ------------------------- | ---------- |
+| `vue`                     | `^3.0.0`   |
+| `element-plus`            | `^2.0.0`   |
+| `@element-plus/icons-vue` | `^2.0.0`   |
+| `@vueuse/core`            | `^14.0.0`  |
+| `lodash-es`               | `^4.17.21` |
 
 ---
 

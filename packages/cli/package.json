@@ -1,7 +1,7 @@
 {
   "name": "@yobiccc/cli",
   "version": "0.0.2",
-  "description": "快速构建前端相关项目的命令行脚手架",
+  "description": "A command-line scaffolding tool for quickly bootstrapping frontend projects",
   "type": "module",
   "license": "MIT",
   "author": "xu.zhu",

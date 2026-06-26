@@ -31,7 +31,7 @@ export default defineConfig({
     minify: false,
     cssMinify: false,
     rollupOptions: {
-      external: ['vue', 'element-plus', '@element-plus/icons-vue', '@vueuse/core'],
+      external: ['vue', 'element-plus', '@element-plus/icons-vue', '@vueuse/core', 'lodash-es'],
       output: [
         {
           format: 'es',
