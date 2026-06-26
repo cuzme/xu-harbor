@@ -10,6 +10,7 @@ export default defineConfig({
   title: 'xu-harbor',
   description: '基于 Element Plus 的 Vue 3 业务组件库文档',
   lang: 'zh-CN',
+  base: '/xu-harbor/',
   themeConfig: {
     nav: [
       { text: '指南', link: '/guide/getting-started' },
