@@ -1,6 +1,6 @@
 {
   "name": "@yobiccc/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "快速构建前端相关项目的命令行脚手架",
   "type": "module",
   "license": "MIT",
