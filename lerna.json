@@ -1,16 +1,16 @@
 {
-    "packages": [
-      "packages/*"
-    ],
-    "version": "independent",
-    "npmClient": "pnpm",
-    "command": {
-      "publish": {
-        "registry": "https://registry.npmjs.org/"
-      },
-      "version": {
-        "allowBranch": "main"
-      }
+  "packages": ["packages/*"],
+  "version": "independent",
+  "npmClient": "pnpm",
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
     },
-    "ignoreChanges": ["pnpm-lock.yaml"]
-  }
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "message": "chore(release): publish"
+    }
+  },
+  "ignoreChanges": ["pnpm-lock.yaml"]
+}
