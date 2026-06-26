@@ -1,0 +1,19 @@
+package.json
+  s_9e6b593cd53240::t_dd63ae2577a5c7 3,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "eb46781b27a3bb5899aa3a5f190755988108872d",
+  "prompts": {},
+  "sessions": {
+    "s_9e6b593cd53240": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "03751adb-a493-4948-86e9-395516a931d1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
