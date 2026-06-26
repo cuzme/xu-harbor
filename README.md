@@ -36,6 +36,7 @@
 | 包名 | 版本 | 说明 |
 | --- | --- | --- |
 | [@yobiccc/pro-components](./packages/proComponents) | [![npm](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components) | 基于 Element Plus 的业务组件库 |
+| [@yobiccc/cli](./packages/cli) | [![npm](https://img.shields.io/npm/v/@yobiccc/cli?style=flat-square)](https://www.npmjs.com/package/@yobiccc/cli) | 快速创建前端项目的命令行脚手架 |
 
 ---
 
@@ -129,12 +130,16 @@ pnpm release:prepare
 ```text
 xu-harbor/
 ├── packages/
-│   └── proComponents/         # @yobiccc/pro-components 组件库
-│       ├── src/
-│       │   ├── components/    # 业务组件
-│       │   └── utils/         # 工具函数
-│       ├── es/                # ESM 构建产物（git ignored）
-│       └── lib/               # CJS 构建产物（git ignored）
+│   ├── proComponents/         # @yobiccc/pro-components 组件库
+│   │   ├── src/
+│   │   │   ├── components/    # 业务组件
+│   │   │   └── utils/         # 工具函数
+│   │   ├── es/                # ESM 构建产物（git ignored）
+│   │   └── lib/               # CJS 构建产物（git ignored）
+│   └── cli/                   # @yobiccc/cli 命令行脚手架
+│       ├── bin/               # 可执行入口
+│       ├── src/               # CLI 源码
+│       └── dist/              # 构建产物（git ignored）
 ├── turbo.json                 # Turbo 任务配置
 ├── lerna.json                 # Lerna 独立版本发布
 └── pnpm-workspace.yaml
