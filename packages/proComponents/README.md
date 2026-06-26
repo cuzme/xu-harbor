@@ -7,7 +7,6 @@
 <br />
 
 [![npm version](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
-[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
 [![license](https://img.shields.io/npm/l/@yobiccc/pro-components?style=flat-square)](https://github.com/cuzme/xu-harbor/blob/main/LICENSE)
 [![vue](https://img.shields.io/badge/vue-3.x-42b883?style=flat-square&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 
@@ -20,7 +19,7 @@
 ## 特性
 
 - 基于 Element Plus 二次封装，降低业务侧使用成本
-- 完整的 TypeScript 类型支持（`.d.mts` / `.d.cts`）
+- 完整的 TypeScript 类型支持（`.d.ts`）
 - ESM + CJS 双格式产物，兼容 `import` 与 `require`
 - 支持全量注册与按需引入单个组件
 - 独立样式入口，配合 CSS Modules 按需加载

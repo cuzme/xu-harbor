@@ -14,7 +14,6 @@
 [![element plus](https://img.shields.io/badge/element--plus-2.x-409eff?style=flat-square)](https://element-plus.org/)
 
 [![npm version](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
-[![npm downloads](https://img.shields.io/npm/dm/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
 
 [快速开始](#快速开始) · [组件文档](#packages) · [本地开发](#本地开发) · [发布](#发布)
 
@@ -26,7 +25,7 @@
 
 - **Monorepo 架构** — pnpm workspace + Turbo 任务编排 + Lerna 独立版本发布
 - **Vue 3 + TSX** — 基于 Element Plus 二次封装，保留类型提示
-- **双格式产物** — ESM (`.mjs`) + CJS (`.cjs`)，自动生成 `.d.mts` / `.d.cts`
+- **双格式产物** — ESM (`.mjs`) + CJS (`.cjs`)，统一生成 `.d.ts` 类型声明
 - **按需引入** — 支持具名导入单个组件，独立样式入口 `@yobiccc/pro-components/style.css`
 - **工程化完备** — ESLint、Prettier、Git Hooks 一应俱全
 
