@@ -1,0 +1,21 @@
+apps/docs/.vitepress/config.ts
+  s_00b0a89df21fe0::t_0039a68f6f785f 13
+.github/workflows/deploy-docs.yml
+  s_00b0a89df21fe0::t_34172abb390318 1-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "4f5c5f42cec9bfd9ed7bfe787756e2458c0d1d2a",
+  "prompts": {},
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
