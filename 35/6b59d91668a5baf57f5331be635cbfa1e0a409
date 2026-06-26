@@ -1,0 +1,19 @@
+.github/workflows/deploy-docs.yml
+  s_00b0a89df21fe0::t_15f32ef9813cab 41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "356b59d91668a5baf57f5331be635cbfa1e0a409",
+  "prompts": {},
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
