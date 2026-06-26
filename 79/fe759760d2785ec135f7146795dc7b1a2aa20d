@@ -1,0 +1,25 @@
+README.md
+  s_f18d0e0108c04e::t_f4cfcd45d994a7 169-171,173
+  s_f18d0e0108c04e::t_b5edac8f7c639c 179-184,192-194,197,200,207
+  s_f18d0e0108c04e::t_faadc71aa208c3 185-191
+  s_f18d0e0108c04e::t_dc141cb6032f4d 30-32
+  s_f18d0e0108c04e::t_d52bd1af246c7f 97-116
+  s_f18d0e0108c04e::t_9b6bda22e54532 18
+  s_f18d0e0108c04e::t_1cc4bf6743df3f 144-147
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "79fe759760d2785ec135f7146795dc7b1a2aa20d",
+  "prompts": {},
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
