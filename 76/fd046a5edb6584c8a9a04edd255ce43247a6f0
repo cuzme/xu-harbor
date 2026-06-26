@@ -1,0 +1,35 @@
+package.json
+  s_f18d0e0108c04e::t_244e9578c236fb 5
+  s_f18d0e0108c04e::t_8456e5d6c745a6 24-35
+packages/proComponents/package.json
+  s_f18d0e0108c04e::t_4aafc4c65a8dbc 61,72
+  s_f18d0e0108c04e::t_62a87751a3cfae 52-53,59,66
+  s_f18d0e0108c04e::t_22e16ec1b969c6 55
+packages/proComponents/README.md
+  s_f18d0e0108c04e::t_3cdd80c7194ef3 32,36,43-49
+packages/cli/package.json
+  s_f18d0e0108c04e::t_bb42878fa38ce8 4
+packages/proComponents/vite.config.ts
+  s_f18d0e0108c04e::t_3ea041db91fe3b 34
+README.md
+  s_f18d0e0108c04e::t_bc1cf81188688c 48
+  s_f18d0e0108c04e::t_7155932b6e25fe 36-37,39,55-56,62-65,71,78,88-91
+.husky/pre-commit
+  s_f18d0e0108c04e::t_e3051204a36ee5 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "76fd046a5edb6584c8a9a04edd255ce43247a6f0",
+  "prompts": {},
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
