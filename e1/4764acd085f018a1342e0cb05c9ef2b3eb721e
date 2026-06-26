@@ -1,0 +1,21 @@
+packages/proComponents/README.md
+  s_00b0a89df21fe0::t_8b747a69da5787 22
+README.md
+  s_00b0a89df21fe0::t_637ae8f0424814 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "e14764acd085f018a1342e0cb05c9ef2b3eb721e",
+  "prompts": {},
+  "sessions": {
+    "s_00b0a89df21fe0": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b4accaf4-ad16-4676-9653-f8002fe2830c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
