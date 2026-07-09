@@ -15,7 +15,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@yobiccc/pro-components?style=flat-square)](https://www.npmjs.com/package/@yobiccc/pro-components)
 
-[快速开始](#快速开始) · [Packages](#packages) · [脚手架](#脚手架) · [本地开发](#本地开发) · [提交规范](#提交规范) · [发布](#发布)
+[组件库](#组件库) · [Packages](#packages) · [脚手架](#脚手架) · [本地开发](#本地开发) · [提交规范](#提交规范) · [发布](#发布)
 
 </div>
 
@@ -42,55 +42,11 @@
 
 ---
 
-## 快速开始
+## 组件库
 
-### 安装
+`@yobiccc/pro-components` 的安装、样式引入、注册方式以及各组件（ButtonPlus / TablePlus / SearchForm 等）的详细用法，请查看组件库文档：
 
-```bash
-pnpm add @yobiccc/pro-components vue element-plus @element-plus/icons-vue @vueuse/core lodash-es
-```
-
-### 引入样式
-
-```ts
-// main.ts
-import "@yobiccc/pro-components/style.css";
-import "element-plus/dist/index.css";
-```
-
-### 全量注册
-
-```ts
-import { createApp } from "vue";
-import ElementPlus from "element-plus";
-import ProComponents from "@yobiccc/pro-components";
-import App from "./App.vue";
-
-const app = createApp(App);
-
-app.use(ElementPlus);
-app.use(ProComponents);
-app.mount("#app");
-```
-
-### 按需使用
-
-```vue
-<script setup lang="ts">
-import { ButtonPlus } from "@yobiccc/pro-components";
-</script>
-
-<template>
-  <ButtonPlus type="primary" size="default">Click me</ButtonPlus>
-</template>
-```
-
-### ButtonPlus Props
-
-| 属性   | 类型                              | 默认值      | 说明                                 |
-| ------ | --------------------------------- | ----------- | ------------------------------------ |
-| `type` | `ButtonType`                      | `'primary'` | 按钮类型，同 Element Plus `ElButton` |
-| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸                             |
+**➜ [packages/proComponents/README.md](./packages/proComponents/README.md)**
 
 ---
 
