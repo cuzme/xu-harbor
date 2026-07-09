@@ -1,0 +1,14 @@
+.page-card:global(.el-card) {
+  border: none;
+  --el-card-border-color: transparent;
+
+  > :global(.el-card__header) {
+    padding: 16px 16px 0;
+    border-bottom: none;
+    font-weight: 500;
+  }
+
+  > :global(.el-card__body) {
+    padding: 16px;
+  }
+}

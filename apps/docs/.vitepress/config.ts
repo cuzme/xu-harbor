@@ -36,6 +36,7 @@ export default defineConfig({
             { text: "Modal 弹窗", link: "/components/modal" },
             { text: "Drawer 抽屉", link: "/components/drawer" },
             { text: "ImageGallery 图片墙", link: "/components/image-gallery" },
+            { text: "PageCard 页面卡片", link: "/components/page-card" },
           ],
         },
       ],
