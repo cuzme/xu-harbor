@@ -80,6 +80,10 @@ export default defineConfig({
         "@yobiccc/pro-components": path.resolve(proComponentsSrc, "index.ts"),
         "@": proComponentsSrc,
       },
+      // 组件库以源码别名引入，若生产构建打入两份 element-plus/vue，会导致
+      // 注入用的 Symbol 不一致，全局 locale/size 配置无法被组件（如 TablePlus
+      // 内部的分页）读取。去重强制单实例，保证 dev/prod 表现一致。
+      dedupe: ["vue", "element-plus"],
     },
   },
 });
