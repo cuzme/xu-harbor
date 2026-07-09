@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "97ae0e954489b3d19941653ba5aeb01e922bf080",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
