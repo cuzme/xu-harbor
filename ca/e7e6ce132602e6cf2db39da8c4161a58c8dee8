@@ -1,0 +1,43 @@
+apps/docs/.vitepress/config.ts
+  s_f18d0e0108c04e::t_f8f26fb6aad611 38
+packages/proComponents/src/components/ImageGallery/index.ts
+  s_f18d0e0108c04e::t_41d700059e2b95 1-2
+apps/docs/demos/image-gallery/custom.vue
+  s_f18d0e0108c04e::t_0f08fb911c856e 1-25
+packages/proComponents/src/components/ImageGallery/ImageGallery.tsx
+  s_f18d0e0108c04e::t_7c3179695a430b 1-15,17-31,34-46,48-60
+  ai_agent 16
+  s_f18d0e0108c04e::t_5078edcf3e2352 32-33,47
+packages/proComponents/src/components/index.ts
+  s_f18d0e0108c04e::t_75bfb16d30f8d1 6
+packages/proComponents/src/components/ImageGallery/style.module.scss
+  s_f18d0e0108c04e::t_345419c873c63e 1-16
+packages/proComponents/src/components/ImageGallery/types.ts
+  s_f18d0e0108c04e::t_f4f2803a6e0285 1-26
+apps/docs/demos/image-gallery/basic.vue
+  s_f18d0e0108c04e::t_ae9bde773ec04f 1-15
+apps/docs/components/image-gallery.md
+  s_f18d0e0108c04e::t_71289647fe7858 1-18,25-29
+  ai_agent 19-24,30-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "cae7e6ce132602e6cf2db39da8c4161a58c8dee8",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
