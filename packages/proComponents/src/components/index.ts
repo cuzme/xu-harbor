@@ -3,3 +3,4 @@ export * from './SearchItem';
 export * from './SearchForm';
 export * from './Modal';
 export * from './Drawer';
+export * from './ImageGallery';

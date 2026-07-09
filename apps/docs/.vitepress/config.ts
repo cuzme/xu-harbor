@@ -35,6 +35,7 @@ export default defineConfig({
             { text: "SearchForm 搜索表单", link: "/components/search-form" },
             { text: "Modal 弹窗", link: "/components/modal" },
             { text: "Drawer 抽屉", link: "/components/drawer" },
+            { text: "ImageGallery 图片墙", link: "/components/image-gallery" },
           ],
         },
       ],

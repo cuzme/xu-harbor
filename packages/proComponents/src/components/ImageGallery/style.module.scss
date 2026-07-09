@@ -1,0 +1,16 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-gallery-thumb {
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image-gallery-empty {
+  font-size: 14px;
+  color: var(--el-text-color-secondary);
+}
