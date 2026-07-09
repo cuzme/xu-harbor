@@ -11,7 +11,7 @@ import { SearchForm, SearchItem } from "@yobiccc/pro-components";
       <SearchItem label="编码">
         <el-input v-model="form.code" clearable placeholder="请输入" />
       </SearchItem>
-      <SearchItem v-show="!collapsed" label="备注">
+      <SearchItem v-if="!collapsed" label="备注">
         <el-input v-model="form.remark" clearable placeholder="请输入" />
       </SearchItem>
     </template>

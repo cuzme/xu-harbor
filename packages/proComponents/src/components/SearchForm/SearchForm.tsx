@@ -1,4 +1,4 @@
-import { defineComponent, ref, reactive, computed, watch, onMounted, type VNode } from 'vue';
+import { defineComponent, ref, reactive, watch, onMounted, type VNode } from 'vue';
 import { ElForm, ElRow, ElButton, type FormInstance } from 'element-plus';
 import { Search, Refresh, ArrowUp, ArrowDown } from '@element-plus/icons-vue';
 import { withInstall } from '@/utils/install';
@@ -10,6 +10,37 @@ import {
 } from './types';
 import { SearchItem } from '../SearchItem';
 import styles from './style.module.scss';
+
+// 操作栏在最后一行补齐剩余栅格的映射（前提：字段使用默认响应式列宽）
+const ACTION_COL_LG_MAP: Record<number, number> = { 0: 24, 1: 16, 2: 8 };
+const ACTION_COL_XL_MAP: Record<number, number> = { 0: 24, 1: 18, 2: 12, 3: 6 };
+
+// 递归统计 VNode 列表中的 SearchItem 数量
+const countSearchItems = (list: VNode[]): number => {
+  let count = 0;
+  for (const node of list) {
+    const type = node.type as { name?: string } | undefined;
+    if (type?.name === 'SearchItem') {
+      count += 1;
+    } else if (Array.isArray(node.children)) {
+      count += countSearchItems(node.children as VNode[]);
+    }
+  }
+  return count;
+};
+
+// 根据搜索项数量动态计算操作栏栅格列
+const calcActionCol = (count: number): ColConfig => {
+  if (count <= 0) {
+    return { sm: 24, md: 24, lg: 24, xl: 24 };
+  }
+  return {
+    sm: 24,
+    md: count % 2 === 0 ? 24 : 12, // 一行两个
+    lg: ACTION_COL_LG_MAP[count % 3], // 一行三个
+    xl: ACTION_COL_XL_MAP[count % 4], // 一行四个
+  };
+};
 
 const SearchForm = withInstall(
   defineComponent({
@@ -48,55 +79,6 @@ const SearchForm = withInstall(
       const setCollapsed = (val: boolean) => {
         collapsed.value = val;
       };
-
-      // 统计默认插槽内的 SearchItem 数量，用于自适应操作栏列宽
-      const searchItemCount = computed(() => {
-        const nodes =
-          slots.default?.({
-            form: searchForm,
-            setForm: setSearchForm,
-            collapsed: collapsed.value,
-          }) || [];
-
-        const collect = (list: VNode[]): number => {
-          let count = 0;
-          for (const node of list) {
-            const type = node.type as { name?: string } | undefined;
-            if (type?.name === 'SearchItem') {
-              count += 1;
-            } else if (Array.isArray(node.children)) {
-              count += collect(node.children as VNode[]);
-            }
-          }
-          return count;
-        };
-
-        return collect(nodes as VNode[]);
-      });
-
-      // 根据搜索项数量动态计算操作栏栅格列
-      const dynamicCalcActionCol = computed<ColConfig>(() => {
-        const count = searchItemCount.value;
-
-        if (count <= 0) {
-          return { sm: 24, md: 24, lg: 24, xl: 24 };
-        }
-
-        const targetCol: ColConfig = { sm: 24 };
-
-        // 一行两个
-        targetCol.md = count % 2 === 0 ? 24 : 12;
-
-        // 一行三个
-        const lgMap: Record<number, number> = { 0: 24, 1: 16, 2: 8 };
-        targetCol.lg = lgMap[count % 3];
-
-        // 一行四个
-        const xlMap: Record<number, number> = { 0: 24, 1: 18, 2: 12, 3: 6 };
-        targetCol.xl = xlMap[count % 4];
-
-        return targetCol;
-      });
 
       const onSearch = () => {
         emit('search', searchForm, formRef.value);
@@ -165,16 +147,22 @@ const SearchForm = withInstall(
         const formClass = props.background
           ? `${styles.searchForm} ${styles.searchFormBg}`
           : styles.searchForm;
-        const actionCol = props.actionCol(collapsed.value) || dynamicCalcActionCol.value;
+
+        // 仅调用一次默认插槽：既用于渲染，也用于统计数量计算操作栏列宽
+        const contentNodes =
+          slots.default?.({
+            form: searchForm,
+            setForm: setSearchForm,
+            collapsed: collapsed.value,
+          }) ?? [];
+        const actionCol =
+          props.actionCol?.(collapsed.value) ||
+          calcActionCol(countSearchItems(contentNodes as VNode[]));
 
         return (
           <ElForm ref={formRef} class={formClass} labelWidth="auto" model={searchForm} {...attrs}>
             <ElRow gutter={8} class={styles.searchFormRow}>
-              {slots.default?.({
-                form: searchForm,
-                setForm: setSearchForm,
-                collapsed: collapsed.value,
-              })}
+              {contentNodes}
               <SearchItem col={actionCol}>
                 <div class={styles.searchFormActions}>
                   {slots.optionLeft?.({ form: searchForm, setForm: setSearchForm })}
