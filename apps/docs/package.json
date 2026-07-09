@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "postcss": "^8.5.16",
     "sass-embedded": "^1.100.0",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vitepress-demo-plugin": "^1.5.1"
   }
 }

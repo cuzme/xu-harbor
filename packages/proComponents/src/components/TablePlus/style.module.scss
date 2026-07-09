@@ -8,4 +8,10 @@
   justify-content: flex-end;
   margin-top: 12px;
   overflow: hidden;
+
+  // Element Plus 跳转器在无单位（如英文语境）时，尾随的空 classifier 仍带
+  // margin-left:8px，导致输入框未贴齐右侧，这里在其为空时移除该边距
+  :global(.el-pagination__classifier:empty) {
+    margin-left: 0;
+  }
 }

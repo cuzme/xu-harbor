@@ -151,17 +151,18 @@ const TablePlus = withInstall(
             ) : null}
             {table}
             {!props.hidePagination ? (
-              <ElPagination
-                class={styles.tablePlusPagination}
-                layout="total, sizes, prev, pager, next, jumper"
-                {...props.paginationProps}
-                currentPage={pageNum.value}
-                pageSize={pageSize.value}
-                pageSizes={defaultPageSizes}
-                total={total.value}
-                onSizeChange={handleSizeChange}
-                onCurrentChange={handleCurrentChange}
-              />
+              <div class={styles.tablePlusPagination}>
+                <ElPagination
+                  layout="total, sizes, prev, pager, next, jumper"
+                  {...props.paginationProps}
+                  currentPage={pageNum.value}
+                  pageSize={pageSize.value}
+                  pageSizes={defaultPageSizes}
+                  total={total.value}
+                  onSizeChange={handleSizeChange}
+                  onCurrentChange={handleCurrentChange}
+                />
+              </div>
             ) : null}
           </>
         );

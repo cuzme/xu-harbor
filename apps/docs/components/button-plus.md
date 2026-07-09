@@ -4,43 +4,11 @@
 
 ## 基础用法
 
-<ClientOnly>
-  <div class="demo-row">
-    <ButtonPlus>默认按钮</ButtonPlus>
-    <ButtonPlus type="primary">主要按钮</ButtonPlus>
-    <ButtonPlus type="success">成功按钮</ButtonPlus>
-    <ButtonPlus type="warning">警告按钮</ButtonPlus>
-    <ButtonPlus type="danger">危险按钮</ButtonPlus>
-  </div>
-</ClientOnly>
-
-```vue
-<template>
-  <ButtonPlus>默认按钮</ButtonPlus>
-  <ButtonPlus type="primary">主要按钮</ButtonPlus>
-  <ButtonPlus type="success">成功按钮</ButtonPlus>
-  <ButtonPlus type="warning">警告按钮</ButtonPlus>
-  <ButtonPlus type="danger">危险按钮</ButtonPlus>
-</template>
-```
+<demo vue="button-plus/basic.vue" title="基础用法" description="通过 type 指定不同的按钮类型。" />
 
 ## 不同尺寸
 
-<ClientOnly>
-  <div class="demo-row">
-    <ButtonPlus type="primary" size="large">大号</ButtonPlus>
-    <ButtonPlus type="primary" size="default">默认</ButtonPlus>
-    <ButtonPlus type="primary" size="small">小号</ButtonPlus>
-  </div>
-</ClientOnly>
-
-```vue
-<template>
-  <ButtonPlus type="primary" size="large">大号</ButtonPlus>
-  <ButtonPlus type="primary" size="default">默认</ButtonPlus>
-  <ButtonPlus type="primary" size="small">小号</ButtonPlus>
-</template>
-```
+<demo vue="button-plus/sizes.vue" title="不同尺寸" description="通过 size 控制按钮大小。" />
 
 ## Props
 
@@ -54,16 +22,3 @@
 | 插槽      | 说明     |
 | --------- | -------- |
 | `default` | 按钮内容 |
-
-<style>
-.demo-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-  padding: 24px;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  margin: 16px 0;
-}
-</style>

@@ -8,140 +8,25 @@
 
 默认插槽提供 `form`（响应式表单数据）与 `setForm` 作用域参数，字段用 `v-model` 双向绑定到 `form`。组件挂载时默认自动触发一次 `search`（可用 `manual` 关闭）。
 
-<script setup>
-import { ref } from 'vue'
-
-const lastQuery = ref('（尚未查询）')
-
-const onSearch = (form) => {
-  lastQuery.value = JSON.stringify(form)
-}
-</script>
-
-<ClientOnly>
-  <SearchForm @search="onSearch">
-    <template #default="{ form }">
-      <SearchItem label="姓名">
-        <el-input v-model="form.name" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="编码">
-        <el-input v-model="form.code" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="状态">
-        <el-select v-model="form.status" clearable placeholder="请选择">
-          <el-option label="启用" :value="1" />
-          <el-option label="停用" :value="0" />
-        </el-select>
-      </SearchItem>
-    </template>
-  </SearchForm>
-  <div style="color: var(--vp-c-text-2)">最近查询参数：{{ lastQuery }}</div>
-</ClientOnly>
-
-```vue
-<script setup lang="ts">
-import { SearchForm, SearchItem } from "@yobiccc/pro-components";
-
-const onSearch = (form: Record<string, unknown>) => {
-  fetchList(form); // 拉取列表
-};
-</script>
-
-<template>
-  <SearchForm @search="onSearch">
-    <template #default="{ form }">
-      <SearchItem label="姓名">
-        <el-input v-model="form.name" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="编码">
-        <el-input v-model="form.code" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="状态">
-        <el-select v-model="form.status" clearable placeholder="请选择">
-          <el-option label="启用" :value="1" />
-          <el-option label="停用" :value="0" />
-        </el-select>
-      </SearchItem>
-    </template>
-  </SearchForm>
-</template>
-```
+<demo vue="search-form/basic.vue" title="基础用法" description="v-model 绑定到默认插槽的 form，点击查询触发 search 事件。" />
 
 ## 折叠与背景
 
 `show-collapse` 显示折叠按钮，`background` 为表单添加卡片背景。折叠状态可通过默认插槽的 `collapsed` 控制字段显隐。
 
-<ClientOnly>
-  <SearchForm show-collapse background :manual="true">
-    <template #default="{ form, collapsed }">
-      <SearchItem label="姓名">
-        <el-input v-model="form.name" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="编码">
-        <el-input v-model="form.code" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem v-show="!collapsed" label="备注">
-        <el-input v-model="form.remark" clearable placeholder="请输入" />
-      </SearchItem>
-    </template>
-  </SearchForm>
-</ClientOnly>
-
-```vue
-<template>
-  <SearchForm show-collapse background :manual="true">
-    <template #default="{ form, collapsed }">
-      <SearchItem label="姓名">
-        <el-input v-model="form.name" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem label="编码">
-        <el-input v-model="form.code" clearable placeholder="请输入" />
-      </SearchItem>
-      <SearchItem v-show="!collapsed" label="备注">
-        <el-input v-model="form.remark" clearable placeholder="请输入" />
-      </SearchItem>
-    </template>
-  </SearchForm>
-</template>
-```
+<demo vue="search-form/collapse-background.vue" title="折叠与背景" description="show-collapse 折叠、background 卡片背景，collapsed 控制字段显隐。" />
 
 ## SearchItem 标签提示
 
 `required` 显示红色星号，`tooltip` 在标签后追加帮助图标，`label-tooltip` 让过长标签在悬浮时以 tooltip 展示完整文本。
 
-```vue
-<template>
-  <SearchForm :manual="true">
-    <template #default="{ form }">
-      <SearchItem label="必填项" required>
-        <el-input v-model="form.a" clearable />
-      </SearchItem>
-      <SearchItem label="带说明" tooltip="这里是字段说明">
-        <el-input v-model="form.b" clearable />
-      </SearchItem>
-    </template>
-  </SearchForm>
-</template>
-```
+<demo vue="search-form/label-tip.vue" title="标签提示" description="required 必填星号、tooltip 帮助图标。" />
 
 ## 操作区插槽
 
 `optionLeft` / `optionRight` 用于在重置、查询按钮左右追加自定义按钮。
 
-```vue
-<template>
-  <SearchForm>
-    <template #default="{ form }">
-      <SearchItem label="姓名">
-        <el-input v-model="form.name" clearable />
-      </SearchItem>
-    </template>
-    <template #optionRight>
-      <el-button>导出</el-button>
-    </template>
-  </SearchForm>
-</template>
-```
+<demo vue="search-form/option-slot.vue" title="操作区插槽" description="optionLeft / optionRight 追加自定义按钮。" />
 
 ## SearchForm Props
 
