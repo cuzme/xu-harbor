@@ -1,0 +1,32 @@
+packages/proComponents/src/components/SearchForm/style.module.scss
+  s_f18d0e0108c04e::t_44f647728ebe52 19-20
+packages/proComponents/src/components/SearchForm/SearchForm.tsx
+  s_f18d0e0108c04e::t_7282bb08f10014 165
+  s_f18d0e0108c04e::t_8e393b643c33c1 2
+  s_f18d0e0108c04e::t_e1db18a71f69ec 188
+packages/proComponents/src/components/SearchItem/types.ts
+  s_f18d0e0108c04e::t_553bfe63676138 1
+packages/proComponents/src/components/SearchItem/SearchItem.tsx
+  s_f18d0e0108c04e::t_47a407bb9858c1 54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "03a56aad59e213fcb9aec55749c14cdbffbc7289",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
