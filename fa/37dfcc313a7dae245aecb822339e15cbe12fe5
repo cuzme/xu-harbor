@@ -1,0 +1,50 @@
+packages/proComponents/src/components/index.ts
+  s_f18d0e0108c04e::t_c29ba1d4eb9676 7
+packages/proComponents/src/components/PageCard/PageCard.tsx
+  s_f18d0e0108c04e::t_a5f23dd6592818 1-20
+packages/proComponents/src/components/PageCard/index.ts
+  s_f18d0e0108c04e::t_3d557ae73ed9e6 1
+apps/docs/demos/page-card/detail.vue
+  s_f18d0e0108c04e::t_3778a36b174596 1-140
+apps/docs/demos/page-card/crud.vue
+  s_f18d0e0108c04e::t_005c6a583d817b 48,52
+  s_f18d0e0108c04e::t_eec21b4797defd 1-8,10-11,13-14,16-17,19-47,49-51,53-102
+  s_f18d0e0108c04e::t_fac5bf462c70a7 9,12,15,18
+packages/proComponents/src/components/PageCard/style.module.scss
+  s_f18d0e0108c04e::t_e6e213f58c21f3 1,3
+  s_f18d0e0108c04e::t_816d4b5c59166c 2,4-14
+apps/docs/demos/page-card/basic.vue
+  s_f18d0e0108c04e::t_a7e3b9cbec18bc 6-8,11-12
+  s_f18d0e0108c04e::t_642af155ac09b0 1-5,13
+  s_f18d0e0108c04e::t_4a262da65e2d51 9-10
+apps/docs/components/page-card.md
+  s_f18d0e0108c04e::t_b2c93992c78b74 13-18
+  s_f18d0e0108c04e::t_26e733e061b48b 19-22,24
+  s_f18d0e0108c04e::t_102c1e72f63866 23
+  ai_agent 29-33,39-43
+  s_f18d0e0108c04e::t_99d289d77d2956 1-2,4,7-8,10,12,25-28,34-38
+  s_f18d0e0108c04e::t_d44a290f1dfb02 3,5-6,9,11
+apps/docs/.vitepress/config.ts
+  s_f18d0e0108c04e::t_62d077f9564902 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "fa37dfcc313a7dae245aecb822339e15cbe12fe5",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "composer-2.5"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
