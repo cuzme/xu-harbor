@@ -34,6 +34,8 @@ export default defineConfig({
             { text: "ButtonPlus 按钮", link: "/components/button-plus" },
             { text: "TablePlus 表格", link: "/components/table-plus" },
             { text: "SearchForm 搜索表单", link: "/components/search-form" },
+            { text: "Modal 弹窗", link: "/components/modal" },
+            { text: "Drawer 抽屉", link: "/components/drawer" },
           ],
         },
       ],

@@ -16,6 +16,7 @@ export const install = function (app: App) {
   return app;
 };
 export * from './components';
+export * from './composables';
 export default {
   install,
 };

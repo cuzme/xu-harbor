@@ -12,7 +12,7 @@ const theme: Theme = {
   // 在最外层包一个 ElConfigProvider，统一将文档站内所有 Element Plus 组件
   // 设为中文语言、默认尺寸 small（对页面与 demo 一并生效）
   Layout: () =>
-    h(ElConfigProvider, { locale: zhCn, size: 'small' }, () => h(DefaultTheme.Layout)),
+    h(ElConfigProvider, { locale: zhCn, size: 'small' , message: {plain:true}}, () => h(DefaultTheme.Layout)),
   enhanceApp({ app }) {
     app.use(ElementPlus);
     app.use(ProComponents);
