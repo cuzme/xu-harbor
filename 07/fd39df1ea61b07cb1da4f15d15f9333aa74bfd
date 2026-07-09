@@ -1,0 +1,29 @@
+apps/docs/.vitepress/theme/index.ts
+  s_f18d0e0108c04e::t_1afe42e251c18d 13-16
+  s_f18d0e0108c04e::t_c63fcb2d1678b2 3
+  s_f18d0e0108c04e::t_1ffb3db93e7eae 1
+  s_f18d0e0108c04e::t_d37051cdb34fa9 17
+apps/docs/.vitepress/config.ts
+  s_f18d0e0108c04e::t_d722898f791870 83-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "07fd39df1ea61b07cb1da4f15d15f9333aa74bfd",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
