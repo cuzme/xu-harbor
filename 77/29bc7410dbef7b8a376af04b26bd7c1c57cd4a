@@ -1,0 +1,27 @@
+packages/proComponents/src/components/SearchForm/SearchForm.tsx
+  s_f18d0e0108c04e::t_f626f141e88d1a 154-156
+  h_916381dd4ea6f7 1,14-44,150-153,157-160,165
+apps/docs/demos/search-form/collapse-background.vue
+  s_f18d0e0108c04e::t_dc0d4b8bdb1768 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "7729bc7410dbef7b8a376af04b26bd7c1c57cd4a",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
