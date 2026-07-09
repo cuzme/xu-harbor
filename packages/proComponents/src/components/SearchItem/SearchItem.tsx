@@ -51,7 +51,7 @@ const SearchItem = withInstall(
       );
 
       return () => (
-        <ElCol class={styles.searchItem} {...props.col}>
+        <ElCol class={styles.searchItem} sm={24} md={12} lg={8} xl={6}>
           <ElFormItem {...attrs}>
             {{
               ...slots,

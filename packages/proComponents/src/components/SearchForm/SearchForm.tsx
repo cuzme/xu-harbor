@@ -1,5 +1,5 @@
 import { defineComponent, ref, reactive, watch, onMounted, type VNode } from 'vue';
-import { ElForm, ElRow, ElButton, type FormInstance } from 'element-plus';
+import { ElForm, ElRow, ElCol, ElButton, type FormInstance } from 'element-plus';
 import { Search, Refresh, ArrowUp, ArrowDown } from '@element-plus/icons-vue';
 import { withInstall } from '@/utils/install';
 import {
@@ -8,7 +8,6 @@ import {
   type ColConfig,
   type SearchFormModel,
 } from './types';
-import { SearchItem } from '../SearchItem';
 import styles from './style.module.scss';
 
 // 操作栏在最后一行补齐剩余栅格的映射（前提：字段使用默认响应式列宽）
@@ -163,7 +162,7 @@ const SearchForm = withInstall(
           <ElForm ref={formRef} class={formClass} labelWidth="auto" model={searchForm} {...attrs}>
             <ElRow gutter={8} class={styles.searchFormRow}>
               {contentNodes}
-              <SearchItem col={actionCol}>
+              <ElCol {...actionCol}>
                 <div class={styles.searchFormActions}>
                   {slots.optionLeft?.({ form: searchForm, setForm: setSearchForm })}
                   {props.showReset ? (
@@ -186,7 +185,7 @@ const SearchForm = withInstall(
                     </ElButton>
                   ) : null}
                 </div>
-              </SearchItem>
+              </ElCol>
             </ElRow>
           </ElForm>
         );

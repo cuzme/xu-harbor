@@ -1,4 +1,4 @@
-import { type ExtractPropTypes, type PropType } from 'vue';
+import { type ExtractPropTypes } from 'vue';
 
 /** 响应式栅格列配置 */
 export interface ColConfig {
@@ -9,11 +9,6 @@ export interface ColConfig {
 }
 
 export const searchItemProps = {
-  /** 栅格列配置 */
-  col: {
-    type: Object as PropType<ColConfig>,
-    default: (): ColConfig => ({ sm: 24, md: 12, lg: 8, xl: 6 }),
-  },
   /** 是否必填（显示红色星号） */
   required: {
     type: Boolean,

@@ -76,12 +76,11 @@
 
 ## SearchItem Props
 
-| 属性           | 类型        | 默认值                         | 说明                      |
-| -------------- | ----------- | ------------------------------ | ------------------------- |
-| `col`          | `ColConfig` | `{ sm:24, md:12, lg:8, xl:6 }` | 响应式栅格列配置          |
-| `required`     | `boolean`   | `false`                        | 是否显示红色必填星号      |
-| `label`        | `string`    | `''`                           | 标签文本                  |
-| `labelTooltip` | `boolean`   | `false`                        | 标签过长时以 tooltip 展示 |
-| `tooltip`      | `string`    | `''`                           | 标签后帮助图标的提示内容  |
+| 属性           | 类型      | 默认值  | 说明                      |
+| -------------- | --------- | ------- | ------------------------- |
+| `required`     | `boolean` | `false` | 是否显示红色必填星号      |
+| `label`        | `string`  | `''`    | 标签文本                  |
+| `labelTooltip` | `boolean` | `false` | 标签过长时以 tooltip 展示 |
+| `tooltip`      | `string`  | `''`    | 标签后帮助图标的提示内容  |
 
 > 其余属性透传给 `ElFormItem`（如 `prop`、`rules` 等）。

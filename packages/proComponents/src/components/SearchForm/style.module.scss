@@ -16,5 +16,7 @@
 .search-form-actions {
   display: flex;
   width: 100%;
+  // 操作栏改用裸 ElCol 承载，补上原 ElFormItem 的行距以对齐字段行
+  margin-bottom: 16px;
   justify-content: flex-end;
 }
