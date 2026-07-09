@@ -81,51 +81,31 @@ app.mount('#app');
 
 ```vue
 <script setup lang="ts">
-import { ButtonPlus } from '@yobiccc/pro-components';
+import { SearchForm, SearchItem } from '@yobiccc/pro-components';
 </script>
 
 <template>
-  <ButtonPlus type="primary" size="large">提交</ButtonPlus>
+  <SearchForm>
+    <template #default="{ form }">
+      <SearchItem label="姓名">
+        <el-input v-model="form.name" clearable placeholder="请输入" />
+      </SearchItem>
+    </template>
+  </SearchForm>
 </template>
 ```
 
 或仅注册单个组件：
 
 ```ts
-import { ButtonPlus } from '@yobiccc/pro-components';
+import { TablePlus } from '@yobiccc/pro-components';
 
-app.use(ButtonPlus);
+app.use(TablePlus);
 ```
 
 ---
 
 ## 组件
-
-### ButtonPlus
-
-在 `ElButton` 基础上封装的增强按钮，支持默认插槽自定义内容。
-
-#### 基础用法
-
-```vue
-<template>
-  <ButtonPlus>默认按钮</ButtonPlus>
-  <ButtonPlus type="success" size="small">小号成功按钮</ButtonPlus>
-</template>
-```
-
-#### Props
-
-| 属性   | 类型                              | 默认值      | 说明                                                |
-| ------ | --------------------------------- | ----------- | --------------------------------------------------- |
-| `type` | `ButtonType`                      | `'primary'` | 按钮类型，与 Element Plus `ElButton` 的 `type` 一致 |
-| `size` | `'large' \| 'default' \| 'small'` | `'default'` | 按钮尺寸                                            |
-
-#### 插槽
-
-| 插槽      | 说明     |
-| --------- | -------- |
-| `default` | 按钮内容 |
 
 ### TablePlus
 
@@ -278,7 +258,7 @@ const onSearch = (form: Record<string, unknown>) => fetchList(form);
 import ProComponents from '@yobiccc/pro-components';
 
 // 具名导出
-import { ButtonPlus, install } from '@yobiccc/pro-components';
+import { TablePlus, install } from '@yobiccc/pro-components';
 ```
 
 | 入口                                | 说明             |

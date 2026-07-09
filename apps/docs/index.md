@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: 组件
-      link: /components/button-plus
+      link: /components/table-plus
     - theme: alt
       text: GitHub
       link: https://github.com/cuzme/xu-harbor

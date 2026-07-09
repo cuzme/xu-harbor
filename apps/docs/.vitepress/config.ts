@@ -18,7 +18,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "指南", link: "/guide/getting-started" },
-      { text: "组件", link: "/components/button-plus" },
+      { text: "组件", link: "/components/table-plus" },
     ],
     sidebar: {
       "/guide/": [
@@ -31,7 +31,6 @@ export default defineConfig({
         {
           text: "组件",
           items: [
-            { text: "ButtonPlus 按钮", link: "/components/button-plus" },
             { text: "TablePlus 表格", link: "/components/table-plus" },
             { text: "SearchForm 搜索表单", link: "/components/search-form" },
             { text: "Modal 弹窗", link: "/components/modal" },

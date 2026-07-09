@@ -44,7 +44,7 @@
 
 ## 组件库
 
-`@yobiccc/pro-components` 的安装、样式引入、注册方式以及各组件（ButtonPlus / TablePlus / SearchForm 等）的详细用法，请查看组件库文档：
+`@yobiccc/pro-components` 的安装、样式引入、注册方式以及各组件（TablePlus / SearchForm / Modal / Drawer 等）的详细用法，请查看组件库文档：
 
 **➜ [packages/proComponents/README.md](./packages/proComponents/README.md)**
 

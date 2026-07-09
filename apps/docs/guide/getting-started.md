@@ -49,10 +49,16 @@ app.mount("#app");
 
 ```vue
 <script setup lang="ts">
-import { ButtonPlus } from "@yobiccc/pro-components";
+import { SearchForm, SearchItem } from "@yobiccc/pro-components";
 </script>
 
 <template>
-  <ButtonPlus type="primary" size="large">提交</ButtonPlus>
+  <SearchForm>
+    <template #default="{ form }">
+      <SearchItem label="姓名">
+        <el-input v-model="form.name" clearable placeholder="请输入" />
+      </SearchItem>
+    </template>
+  </SearchForm>
 </template>
 ```
