@@ -1,0 +1,33 @@
+README.md
+  s_f18d0e0108c04e::t_df38125ac6527c 47
+apps/docs/.vitepress/config.ts
+  s_f18d0e0108c04e::t_7c8b1671360815 21
+packages/proComponents/README.md
+  s_f18d0e0108c04e::t_5edbe5cbd530c3 261
+  s_f18d0e0108c04e::t_6000915723f3bc 84,88-94,101,103
+apps/docs/index.md
+  s_f18d0e0108c04e::t_f867eb3c6616c0 14
+apps/docs/guide/getting-started.md
+  s_f18d0e0108c04e::t_e83fe3b267ac76 52,56-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "63af7602051e56fe1d04bb5f081b4aed29b0e234",
+  "prompts": {},
+  "humans": {
+    "h_916381dd4ea6f7": {
+      "author": "xu.zhu <936843287@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_f18d0e0108c04e": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "17c06084-d1ac-44b1-b1eb-575aeae4b12b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "xu.zhu <936843287@qq.com>"
+    }
+  }
+}
